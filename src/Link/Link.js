@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import s from './Link.module.css'
+import s from './Link.module.scss'
 
 
 const Link = ({ url, label }) => {
     return (
         <a className={s.container} href={url}>
-            {label}
+            <div className={s.labelWrapper}>
+                {label}
+            </div>
         </a>
     )
 }

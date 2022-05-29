@@ -1,0 +1,9 @@
+@import '../variables.scss';
+
+.container {
+    color: $secondary-color;
+}
+
+.wrapper {
+    @include border;
+}

@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import s from './Title.module.css'
+import s from './Title.module.scss'
 
 const Title = ({ text }) => {
     return (
-        <h1 className={s.container}>{text}</h1>
+        <div className={s.wrapper}>
+            <h1 className={s.container}>{text}</h1>
+        </div>
     )
 }
 
