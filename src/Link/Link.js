@@ -1,11 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import s from './Link.module.css'
 
 
-const Link = (props) => {
+const Link = ({ url, label }) => {
     return (
-        <a href={props.url}>
-            {props.label}
+        <a className={s.container} href={url}>
+            {label}
         </a>
     )
 }
