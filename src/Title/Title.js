@@ -1,11 +1,16 @@
+import { css } from '@emotion/css'
 import React from 'react'
 import PropTypes from 'prop-types'
-import s from './Title.module.scss'
+// import s from './Title.module.scss'
+import { PRIMARY_COLOR } from '../colors'
 
 const Title = ({ text }) => {
     return (
-        <div className={s.wrapper}>
-            <h1 className={s.container}>{text}</h1>
+
+        <div className={css`
+            color: ${PRIMARY_COLOR}
+        `}>
+            {text}
         </div>
     )
 }
